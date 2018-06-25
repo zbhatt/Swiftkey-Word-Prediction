@@ -1,0 +1,30 @@
+ZB_CP_Final1
+========================================================
+author: Zankhana Bhatt  
+date: 
+autosize: true
+
+Introduction
+========================================================
+The goal of this exercise is to create a product to highlight the prediction algorithm that you have built and to provide an interface that can be accessed by others.
+
+How the code works
+========================================================
+
+Data sets used were text digests from HC Corpora's US-English twitter feeds, blogs and news articles. In order to prepare the data for the app usage, it was pre-processed to remove non standard words and prepare the data for analysis, it was first preprocessed to remove anomalies and reformatted. Afterwards, only sampled data was used
+
+Algorithm
+========================================================
+
+The app used the N-gram model to predict the next word.
+The corpus was tokenized into unigrams, bigrams, trigrams, four-grams and five-grams.
+Katz's back off model and Good-Turing smoothing were used to predict the probability of unseen words.
+The model would first search a match in the five-gram table, if a match was found, the predicted word would be returned based on the probability; if not, the model would back off to the four-gram table and continue the search and computation, and so on.
+
+Links
+=========================================================
+
+Below is the link to the shiny app that predicts the next phrase when the input has been given 
+and that is how the whole algorithm works.
+
+
